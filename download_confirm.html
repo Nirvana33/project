@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>包图网</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="css/download_confirm.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<script type="text/javascript">
+	$(function(){
+		var winWidth=$(window).width();
+		var winHeight=$(window).height();
+		var popWidth=$('#pop').outerWidth(true);
+		var popHeight=$('#pop').outerHeight(true);
+		var popLeft=(winWidth-popWidth)/2;
+		var popTop=(winHeight-popHeight)/2;
+			
+		$('.btn a').click(function(){
+			$('#pop').fadeIn(20).addClass("animated bounceIn");
+		})
+
+		$('#pop>p i').click(function(){
+			$('#pop').hide();
+		})
+		$(window).resize(function(){
+			winWidth=$(window).width();
+		    winHeight=$(window).height();
+		    popLeft=(winWidth-popWidth)/2;
+		    popTop=(winHeight-popHeight)/2;
+		    $('#pop').animate({'left':popLeft+'px','top':popTop+'px'},10)
+		}).dequeue();
+
+		$(window).load(function(){
+			$('#pop').fadeIn(20).addClass("animated bounceIn");
+		})
+	})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="pop">
+			<p>登陆包图网<i></i></p>
+			<div class="contact">
+				<ul>
+					<li><a href="#"><img src="images/icon-qq.png" width="112px" height="130px"></a><p>登录后可免费下载</p></li>
+					<li><a href="#"><img src="images/icon-weixin.png" width="110px" height="120px"></a><p>微信快速登录</p></li>
+				</ul>
+			</div>
+		</div>
+		<div id="header">
+			<div class="header_m">
+				<h1>下载确认页</h1>
+				<a href="#"><返回浏览页</a>
+			</div>
+		</div>
+		<div id="content">
+			<div class="image">
+				<a href="#"><img src="pic/s5.jpg"></a>
+			</div>
+			<div class="load">
+				<p class="p1">简约清新卡通父亲节海报设计</p>
+				<div class="btn">
+					<a href="#">VIP电信下载</a>
+					<a href="#">VIP网通下载</a>
+				</div>
+				<p class="p2">包图网设计作品均为原创、正版、可商用，请放心下载使用。</p>
+				<p class="p3">文件格式：PSD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺寸：3543x5315 像素</p>
+				<p class="p3">模板体积：3.98M &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;颜色模式：CMYK</p>
+			</div>
+		</div>
+		<div id="footer">
+			<div>如遇到问题，需要帮助。请联系客服QQ:<a href="#">800053584</a></div>
+		</div>
+	</div>
+</body>
+</html>

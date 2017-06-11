@@ -1,0 +1,148 @@
+*{
+    padding: 0;margin: 0
+}
+ul{
+	list-style: none;
+}
+#wrap{
+    width: 100%
+}
+#pop{
+	width: 700px;
+	height: 430px;
+	background: white;
+	box-shadow: 1px 1px 1px gray,-1px -1px 1px gray;
+	position: fixed;
+	z-index: 1000;
+	top: 18%;
+	left: 23%;
+	display: none;
+	animation-duration: 0.5s;
+}
+#pop>p{
+	height: 60px;
+	line-height: 60px;
+	background: #FBE5C8;
+	color: #BE6C00;
+	text-align: center;
+}
+#pop>p i{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	background: url(../images/icon-public.png) -27px 0 no-repeat;
+	cursor: pointer;
+}
+#pop .contact li{
+	float: left;
+	text-align: center;
+	margin: 50px 4px 0 110px
+}
+#pop .contact li a{
+	display: block;
+	width: 178px;
+	height: 178px;
+	line-height: 280px;
+	text-align: center;
+	border: 1px solid silver;
+	border-radius: 178px;
+	box-shadow: 1px 1px 1px #E6E6E6;
+	margin-bottom: 35px
+}
+#pop .contact li p{
+	font-size: 23px;
+	color: #D28B00;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background: #9D794A
+}
+.header_m{
+    width: 1220px;
+    margin: 0 auto;
+    line-height: 100px;
+    position: relative;
+}
+.header_m h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+}
+.header_m a{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	font-size: 18px;
+}
+#content{
+	width: 1220px;
+	margin: 0 auto;
+	padding: 45px 0 150px;
+}
+#content .image{
+	float: left;
+	width: 238px;
+	height: 358px;
+	border: 1px solid silver;
+	box-shadow: 1px 0px 5px gray,-1px -1px 5px gray;
+	margin-left: 220px;
+	margin-right: 60px
+}
+#content .load{
+	width: 630px;
+	float: left;
+	color: #4E4E4E
+}
+#content .p1{
+	margin-bottom: 55px;
+}
+#content .btn a{
+	text-decoration: none;
+	color: #966734;
+	font-weight: bold;
+	display: inline-block;
+	width: 168px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	background: url(../images/down_butt.png) -2px -3px no-repeat;
+	box-shadow: 0 2px 2px gray;
+	margin-bottom: 40px;
+	border-radius: 8px;
+	margin-right: 10px
+}
+#content .btn a:hover{
+	background: url(../images/down_butt.png) -2px -65px no-repeat;
+}
+#content .p2{
+	border-bottom: 1px solid #CCCCCC;
+	height: 40px
+}
+#content .p3{
+	font-size: 15px;
+	line-height: 20px;
+	margin-top: 20px
+}
+#footer{
+	width: 100%;
+	height: 100px;
+	clear: both;
+	padding-top: 100px;
+}
+#footer div{
+	width: 500px;
+	margin-left:250px;
+	font-size: 15px;
+	color: #9D794A;
+}
+#footer div a{
+	text-decoration: none;
+	color: #FF9100;
+}

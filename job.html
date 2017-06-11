@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>包图网</title>
+	<link rel="stylesheet" type="text/css" href="css/job.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.flow.1.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.login-left li').hover(function(){
+				$(this).find('.QQ').show();
+				$(this).find('.weixin').show()
+			},function(){
+				$(this).find('.QQ').hide();
+				$(this).find('.weixin').hide()
+			});
+
+			$('.logo_list li>a').hover(function(){
+				$(this).addClass('current').parent('li').siblings().children('a').removeClass('current')
+			},function(){
+				$(this).removeClass('current').parents('ul').children('li:first-child').children('a').addClass('current')
+			});
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('.logo_list li').hover(function(){
+			$(this).children('.list_item').show().parent('li').siblings('li').children('.list_item').hide();
+
+			},function(){
+				$(this).children('.list_item').hide()
+			});
+			var oli=$('.logo_list li');
+			var index=oli.index();
+			var num=0;
+			for(var i=1;i<oli.length;i++){
+				num+=80;
+				oli.eq(i).children('.list_item').css('left',num+'px');
+			}
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('.section .example ul li').hover(function(){
+				$(this).animate({'top':'-1px'},200).css('box-shadow','5px 15px 20px #DFDFDF')
+			},function(){
+				$(this).animate({'top':'1px'},200).css('box-shadow','2px 2px 5px #DFDFDF')
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="right_nav">
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href="">点我赚钱</a></li>
+				<li><a href="">建议反馈</a></li>
+				<li><a href="">联系客服</a></li>
+				<li><a href="">微信公号</a></li>
+				<li class="back_top"><a>返回顶部</a></li>
+			</ul>
+		</div>
+		<div id="er_code"><img src="images/er-code.png" width="180px" height="180px"></div>
+		<div id="header">
+			<div class="login">
+				<div class="login1200">
+					<div class="login-left">
+						<ul>
+							<li class="left_1"><a href="">联系客服</a></li>
+							<li class="left_2"><a href="">QQ群联盟</a>
+								<div class="QQ">
+									<div class="QQ-top">
+										<span class="sp1">包图网官方设计交流群：<strong>282594146</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<span class="sp1">包图网广告设计交流群：<strong>214363552</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<span class="sp1">包图设计师福利发放群：<strong>334507831</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<span class="sp1 bt-sp">官方QQ群：<strong>514781631</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<input type="button" value="更多QQ联盟群">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="login-right">
+						<ul>
+							<li class="right_3"><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx29ca45d79042aa4c&redirect_uri=http%3A%2F%2F888pic.com%2Flogin%2Fcallback%3Ftype%3Dweixin&response_type=code&scope=snsapi_login">微信登陆</a></li>
+							<li class="right_2"><a href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=101334430&redirect_uri=http%3A%2F%2F888pic.com%2Flogin%2Fcallback%3Ftype%3Dqq&response_type=code&scope=get_user_info%2Cadd_share%2Cadd_pic_t" target="_blank">QQ登陆</a></li>
+							<li class="right_1"><a>注册</a></li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+			<div class="pop" style="animation-duration: 0.5s;">
+				<p class="close_pop"></p>
+				<p class="title">包图网</p>
+				<p class="p_line"><i></i>您将成为包图网第<span style="color: #FF9100">3,351,111</span>名注册用户<i></i></p>
+				<a href="" class="contact QQ_reg"><i></i>QQ一键注册</a>
+				<a href="" class="contact wx_reg"><i></i>微信一键注册</a>
+				<p class="agree"><input type="checkbox" checked="checked" disabled="disabled"> 同意 <a href="">《包图网网络服务使用协议》</a></p>
+				<p class="go_login">已有账号?<a href=""> 去登陆</a></p>
+			</div>
+			<div class="logo">
+				<div class="logo1200">
+					<div class="logo_img">
+						<a href=""><img src="images/logo.png"></a>
+					</div>
+					<div class="logo_list">
+						<ul>
+							<li><a class="current" href="">首页</a></li>
+							<li><a href="">广告设计</a>
+								<div class="list_item">
+									<h3><a href="">广告设计(原创、可商用)</a></h3>
+									<a href="">海报</a><a href="">画册封面</a>
+									<a href="">展板</a><a href="">宣传单|折页</a>
+									<a href="">证书</a><a href="">名片|VIP卡</a>
+									<a href="">节目设计</a><a href="">简历</a>
+									<a href="">画册整套</a>
+								</div>
+							</li> 
+							<li><a href="">淘宝设计</a>
+								<div class="list_item">
+									<h3><a href="">淘宝设计(原创、可商用)</a></h3>
+									<a href="">综合模板</a><a href="">淘宝首页</a>
+									<a href="">节日活动</a><a href="">淘宝海报</a>
+									<a href="">主播|直通车</a><a href="">淘宝详情页</a>
+									<a href="">淘宝手机端模板</a>
+								</div>
+							</li>
+							<li><a href="">企业办公</a>
+								<div class="list_item company">
+									<h3><a href=""><span>PPT模板</span></a><a href=""><span>Excel模板</span></a></h3>
+									<h3><a href="">Word模板</a></h3>
+									<h3 class="h3"><a>PPT精选</a></h3>
+									<a href="">工作汇报</a><a href="">毕业答辩</a><a href="">计划总结</a>
+									<a href="">商业计划书</a><a href="">节日庆典</a><a href="">更多>></a>
+									<h3 class="h3"><a>Excel精选</a></h3>
+									<a href="">薪酬福利</a><a href="">考核绩效</a><a href="">财务报表</a>
+									<a href="">报价单</a><a href="">出入库</a><a href="">更多>></a>
+									<h3 class="h3"><a>Word精选</a></h3>
+									<a href="">简历</a><a href="">薪酬考核</a><a href="">买卖合同</a>
+									<a href="">工作计划</a><a href="">思想汇报</a><a href="">更多>></a>
+								</div>
+							</li>
+							<li><a href="">视频</a>
+								<div class="list_item">
+									<h3><a href="">视频设计(原创、可商用)</a></h3>
+									<a href="">AE模板</a><a href="">会声会影</a>
+									<a href="">Edius</a><a href="">实拍视频</a>
+								</div>
+							</li>
+							<li><a href="">背景</a>
+								<div class="list_item">
+									<h3><a href="">背景设计(原创、可商用)</a></h3>
+									<a href="">电商背景</a><a href="">广告设计背景</a>
+								</div>
+							</li>
+							<li><a href="">设计素材</a>
+								<div class="list_item">
+									<h3><a href="">设计素材(原创、可商用)</a></h3>
+									<a href="">节日</a><a href="">不规则图形</a>
+									<a href="">漂浮</a><a href="">效果元素</a>
+									<a href="">促销标签</a><a href="">艺术字</a>
+									<a href="">边框纹理</a><a href="">装饰图案</a>
+									<a href="">产品实物</a><a href="">手绘卡通</a>
+								</>
+							</li>
+							<li class="new"><a href="">企业VIP</a></li>
+							<li><a href="">个人VIP</a>
+								<div class="list_item VIP">
+									<a href=""><span>为什么要加入<strong>VIP</strong>?</span></a>
+									<a href=""><img src="images/tb-02.png"> <span>包图网拥有图片版权，<strong>放心商用</strong></span></a>
+									<a href=""><img src="images/tb-03.png"> <span>单价低至<strong>1分钱，</strong>全网最低</span></a>
+									<a href=""><img src="images/tb-04.png"> <span>全站设计模板<strong>无限下载</strong></span></a>
+									<a href=""><input type="button" value="立即加入VIP"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="join">
+				<img src="job-pic/bg.png" width="100%" height="100%">
+				<div class="come"></div>
+			</div>
+			<div class="world">
+				<h1>包图以设计改变世界</h1>
+				<p>包图网正努力成为国内素材资源领域的领导者,我们立志做最好的商用设计图库,以解决国内设计素材质量参差不齐等问题。</p>
+				<p>为大家提供设计优质又兼顾商业实用的设计作品。</p>
+				<p>我们目前拥有</p>
+				<div class="num"><p>351,556</p><span>全站资源</span></div>
+				<div class="num"><p>14,194,913</p><span>注册用户</span></div>
+				<div class="num"><p>70,974,565</p><span>下载次数</span></div>
+			</div>
+			<div class="work">
+				<img src="job-pic/page.png">
+			</div>
+			<div class="info">
+				<p class="speak">看看我们的代表设计师是怎么说的吧</p>
+				<div class="person">
+					<p class="name"><span>张悦</span><span>职业：设计师地址：上海</span></p>
+					<p class="time">2016年8月8日成为包图网签约设计师</p>
+					<p class="ita"><span></span><i>在包图网传的作品越多,就能赚到更多的钱</i> <span></span></p>
+					<p class="ita"><span></span><i>成为包图网签约设计师后,我只靠在家做兼职单个月就赚了三万多</i><span></span></p>
+					<p class="ita"><span></span><i>只需要你每天都上传几张作品,日积月累下来,这就是一笔相当可观的收入</i><span></span></p>
+					<p class="ita"><span></span><i>我希望你也加入包图网,这样包图网越做越大,我的收入也越来越高</i> <span></span></p>
+					<div class="picture"><img src="job-pic/2.png"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="title">
+					<h1>工作内容</h1>
+					<p>我们会实时更新热点主题,你只需要按照我们的主题选择性操作就行了。</p>
+					<p>你可以选择你拿手的制作,我们只需要海报,宣传单,展报,画册,淘宝模板等素材</p>
+					<p>工作日每天两张以上,周末对数量不做要求。</p>
+				</div>
+				<div class="example">
+					<p>下面是一些例子:</p>
+					<ul>
+						<li>
+							<a href=""><img src="job-pic/job1.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job2.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job3.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job4.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job5.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job6.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job7.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job8.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="job-pic/job9.png"></a>
+						</li>
+					</ul>
+					<a href="#" class="look-more">查看更多设计</a>
+				</div>
+				<div class="sum">
+					<p>好吧...看起来还不错,但我想看看我工作之余通过包图网到底可以赚多少钱？</p>
+					<p>下面是一个计算器,您的收入是根据您的上传量和下载数来决定的,您可以通过计算器大概算算。</p>
+					<p>填上您每天的上传量,让您的月收入平均增长这数:</p>
+					<p><span>每天上传通过</span><input type="text"></p>
+					<p><span>每月收益</span><input type="text" readonly="readonly"></p>
+					<p>根据下载量和上传量,您的作品2-500元一张</p>
+				</div>
+			</div>
+			<div class="want">
+				<div class="want_1">
+					<h1>工作要求</h1>
+					<ul>
+						<li>
+							<div>
+								<img src="job-pic/ion1.png">
+							</div>
+							<div>
+								<p class="p1">熟练的设计技能</p>
+								<p class="p2">能熟练使用PS、AI、CDR等软件，效率高。</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="job-pic/ion2.png">
+							</div>
+							<div>
+								<p class="p1">有成熟的设计作品</p>
+								<p class="p2">从事设计相关工作、有设计作品者优先。</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="job-pic/ion3.png">
+							</div>
+							<div>
+								<p class="p1">审美、创造力</p>
+								<p class="p2">有较高的审美和设计能力，广告设计师，&nbsp;&nbsp;&nbsp;&nbsp;
+								电商设计师为主。</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="job-pic/ion4.png">
+							</div>
+							<div>
+								<p class="p1">空余时间</p>
+								<p class="p2">有较多的空余时间，可以自由规划时间表，&nbsp;&nbsp;
+									以高效率提供作品。</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="job-pic/ion5.png">
+							</div>
+							<div>
+								<p class="p1">质量承诺</p>
+								<p class="p2">所有上传作品，都需通过网站人工检测，&nbsp;&nbsp;&nbsp;&nbsp;
+									需按热点制作。</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="job-pic/ion6.png">
+							</div>
+							<div>
+								<p class="p1">原创承诺</p>
+								<p class="p2">所上传内容必须是原创作品，如果你剽窃或直
+									接复制其他网站作品，将会被网站所追究责任。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="want_2">
+					<img src="job-pic/1.png">
+				</div>
+				<div class="want_3">
+					<p>您准备好与包图网合作了吗？</p>
+					<div>马上去赚钱</div>
+				</div>
+				<div class="want_4">
+					<p>工作人员QQ：<br>
+					广告设计师联系QQ：1764632195 2438987410 3102329506<br>
+					广告设计工作室联系QQ：2438987410<br>
+					背景元素设计师联系QQ: 1984605014<br>
+					电商设计师联系QQ：362942334<br>
+					PPT设计师联系QQ：316678680<br>
+					视频设计师联系QQ：2484470450<br></p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>若发现您的权利被侵害，请联系客服QQ:800053584，我们将尽快处理</p>
+			<p><span>关于我们 设计图片 今日新图 热门专题 售后服务</span> 包图网 - Copyright © 2016包图网 沪ICP备10011451号-7 用时：0.0010 2.182 秒</p>
+		</div>
+	</div>
+</body>
+</html>

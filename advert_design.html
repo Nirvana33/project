@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>包图网</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.back_top').click(function(){
+				$('body').animate({scrollTop:0+'px'},500)
+			})
+
+			$(window).scroll(function(){
+				if($(window).scrollTop()>280){$('#right_nav .back_top').show()}else{$('#right_nav .back_top').hide()}
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="right_nav">
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href="">点我赚钱</a></li>
+				<li><a href="">建议反馈</a></li>
+				<li><a href="">联系客服</a></li>
+				<li><a href="">微信公号</a></li>
+				<li class="back_top"><a>返回顶部</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<div class="login">
+				<div class="login1200">
+					<div class="login-left">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">广告设计</a></li>
+							<li><a href="">淘宝设计</a></li>
+							<li><a href="">PPT模板</a></li>
+							<li><a href="">背景</a></li>
+							<li><a href="">设计素材</a></li>
+							<li><a href="">视频</a></li>
+						</ul>
+					</div>
+					<div class="login-right">
+						<ul>
+							<li class="right_3"><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx29ca45d79042aa4c&redirect_uri=http%3A%2F%2F888pic.com%2Flogin%2Fcallback%3Ftype%3Dweixin&response_type=code&scope=snsapi_login">微信登陆</a></li>
+							<li class="right_2"><a href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=101334430&redirect_uri=http%3A%2F%2F888pic.com%2Flogin%2Fcallback%3Ftype%3Dqq&response_type=code&scope=get_user_info%2Cadd_share%2Cadd_pic_t" target="_blank">QQ登陆</a></li>
+							<li class="right_1"><a>注册</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div> 
+			<div class="pop" style="animation-duration: 0.5s;">
+				<p class="close_pop"></p>
+				<p class="title">包图网</p>
+				<p class="p_line"><i></i>您将成为包图网第<span style="color: #FF9100">3,351,111</span>名注册用户<i></i></p>
+				<a href="" class="contact QQ_reg"><i></i>QQ一键注册</a>
+				<a href="" class="contact wx_reg"><i></i>微信一键注册</a>
+				<p class="agree"><input type="checkbox" checked="checked" disabled="disabled"> 同意 <a href="">《包图网网络服务使用协议》</a></p>
+				<p class="go_login">已有账号?<a href=""> 去登陆</a></p>
+			</div>
+			<div class="logo">
+				<div class="logo1200">
+					<div class="logo_img">
+						<a href=""><img src="images/logo.png"></a>
+					</div>
+					<div class="search">
+						<input type="text" placeholder="搜 免费、可商用 设计作品"><input type="button" value="搜索">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="product_nav">
+				<p class="location"><i></i>当前位置：<a href="">包图网</a> > <a href="">广告设计</a></p>
+				<ul class="item">
+					<li class="current"><a href="">广告设计</a></li>
+					<li><a href="">淘宝设计</a></li>
+					<li><a href="">背景</a></li>
+					<li><a href="">设计素材</a></li>
+					<li><a href="">PPT模板</a></li>
+					<li><a href="">Excel模板</a></li>
+					<li><a href="">Word模板</a></li>
+					<li><a href="">视频</a></li>
+				</ul>
+				<p class="item_option">所有分类 > <span class="first"><i></i></span><span class="second"><i></i></span></p>
+				<div class="item_list" id="item_list1">
+					<span class="explain">场景</span>
+					<ul>
+						<li class="current"><a href="#">全部</a></li>
+						<li><a href="#">海报</a></li>
+						<li><a href="#">画册封面</a></li>
+						<li><a href="#">展板</a></li>
+						<li><a href="#">宣传单|折页</a></li>
+						<li><a href="#">证书</a></li>
+						<li><a href="#">名片|vip卡</a></li>
+						<li><a href="#">节日设计</a></li>
+						<li><a href="#">简历</a></li>
+						<li><a href="#">画册整套</a></li>
+						<li><a href="#">其它</a></li>
+					</ul>
+					<span class="look-more"><i></i>更多</span>
+				</div>
+				<div class="item_list"  id="item_list2" style="display: none;">
+					<span class="explain">用途</span>
+					<ul>
+						<li class="current"><a href="#">全部</a></li>
+						<li><a href="#">POP促销海报</a></li>
+						<li><a href="#">房地产海报</a></li>
+						<li><a href="#">美食海报</a></li>
+						<li><a href="#">培训教育海报</a></li>
+						<li><a href="#">招聘海报</a></li>
+						<li><a href="#">旅游海报</a></li>
+						<li><a href="#">美容美发海报</a></li>
+						<li><a href="#">中国风海报</a></li>
+						<li><a href="#">化妆品海报</a></li>
+					</ul>
+					<span class="look-more"><i></i>更多</span>
+				</div>
+				<div class="item_list" id="item_list3">
+					<span class="explain">行业</span>
+					<ul>
+						<li class="current"><a href="#">全部</a></li>
+						<li><a href="#">百货零售</a></li>
+						<li><a href="#">餐饮行业</a></li>
+						<li><a href="#">休闲娱乐</a></li>
+						<li><a href="#">教育培训</a></li>
+						<li><a href="#">地产行业</a></li>
+						<li><a href="#">美容美发</a></li>
+						<li><a href="#">汽车行业</a></li>
+						<li><a href="#">服装行业</a></li>
+						<li><a href="#">医疗保健</a></li>
+						<li><a href="#">家居用品行业</a></li>
+						<li><a href="#">金融行业</a></li>
+						<li><a href="#">政府机关</a></li>
+						<li><a href="#">体育运动</a></li>
+						<li><a href="#">婚庆</a></li>
+						<li><a href="#">邮电通讯行业</a></li>
+						<li><a href="#">交通行业</a></li>
+						<li><a href="#">旅游</a></li>
+						<li><a href="#">其它</a></li>
+					</ul>
+					<span class="look-more"><i></i>更多</span>
+				</div>
+			</div>	
+			<div class="advert_nav">
+				<ul>
+					<li class="current"><a href="">综合排序</a></li>
+					<li><a href="">热门下载</a></li>
+					<li><a href="">新上传</a></li>
+					<li><a href="">昨日热图</a></li>
+				</ul>
+			</div>
+			<div class="advert_img">
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节节日设计系列海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a1.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">清新创意端午节龙舟海报</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a2.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节粽子促销海报</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a3.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">六一儿童节复古中国风儿时记忆公益宣传海报</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a4.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">六一儿童节 儿童 小朋友 小孩 爱心捐款</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a5.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">创意一带一路海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a6.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">简约中国风茶馆海报素材</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a7.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">艺术简约禅意文化创意海报</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a8.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">创意简介物联网海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a9.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节节日设计系列海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a10.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节节日设计系列海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a11.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节节日设计系列海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a12.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节节日设计系列海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a13.jpg">
+				</div>
+				<div class="box">
+					<div class="mask">	
+						<a href="#">端午节节日设计系列海报设计</a>
+						<a href="#"><span></span>免费下载</a>
+						<a href="#"><span></span> 收藏</a>
+					</div>
+					<img src="pic/a14.jpg">
+				</div>
+			</div>
+			<div class="page">
+				<div class="page_num">
+					<ul>
+						<li class="current"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li style="color: #FF9100">…</li>
+						<li><a href="#">1628</a></li>
+						<li class="next_page"><a href="#">下一页</a></li>
+					</ul>
+				</div>
+				<div class="page_text">
+					<h4>友情链接<i></i></h4>
+					<p>端午节模板 父亲节模板 喜报模板 618模板名片模板 申请友情链接请联系QQ：2303940629</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>若发现您的权利被侵害，请联系客服QQ:800053584，我们将尽快处理</p>
+			<p><span>关于我们 设计图片 今日新图 热门专题 售后服务</span> 包图网 - Copyright © 2016包图网 沪ICP备10011451号-7 用时：0.0010 2.182 秒</p>
+		</div>
+	</div>
+</body>
+</html>

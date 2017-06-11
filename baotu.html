@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>包图网</title>
+	<link rel="stylesheet" type="text/css" href="css/baotu.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.flow.1.0.js"></script>
+	<script src="js/vmc.slider.full.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.login-left li').hover(function(){
+				$(this).find('.QQ').show();
+				$(this).find('.weixin').show()
+			},function(){
+				$(this).find('.QQ').hide();
+				$(this).find('.weixin').hide()
+			});
+
+			$('.logo_list li>a').hover(function(){
+				$(this).addClass('current').parent('li').siblings().children('a').removeClass('current')
+			},function(){
+				$(this).removeClass('current').parents('ul').children('li:first-child').children('a').addClass('current')
+			});
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('.logo_list li').hover(function(){
+			$(this).children('.list_item').show().parent('li').siblings('li').children('.list_item').hide();
+
+			},function(){
+				$(this).children('.list_item').hide()
+			});
+			var oli=$('.logo_list li');
+			var index=oli.index();
+			var num=0;
+			for(var i=1;i<oli.length;i++){
+				num+=80;
+				oli.eq(i).children('.list_item').css('left',num+'px');
+			}
+		})
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$('.bxslider #slider').vmcSlider({
+				width: 880,
+				height: 475,
+				gridCol: 10,
+				gridRow: 5,
+				gridVertical: 20,
+				gridHorizontal: 10,
+				autoPlay: true,
+				ascending: true,
+				effects: [
+					'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+					'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+					'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+				],
+				ie6Tidy: false,
+				random: false,
+				duration: 4000,
+				speed: 900
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="designer"><a href="#"><img src="images/11_1.png"></a></div>
+		<div id="right_nav">
+			<ul>
+				<li><a href="job.html"></a></li>
+				<li><a href="job.html">点我赚钱</a></li>
+				<li><a href="job.html">建议反馈</a></li>
+				<li><a href="job.html">联系客服</a></li>
+				<li><a href="job.html">微信公号</a></li>
+				<li class="back_top"><a>返回顶部</a></li>
+			</ul>
+		</div>
+		<div id="er_code"><img src="images/er-code.png" width="180px" height="180px"></div>
+		<div id="header">
+			<div class="login">
+				<div class="login1200">
+					<div class="login-left">
+						<ul>
+							<li class="left_1"><a href="">联系客服</a></li>
+							<li class="left_2"><a href="">QQ群联盟</a>
+								<div class="QQ">
+									<div class="QQ-top">
+										<span class="sp1">包图网官方设计交流群：<strong>282594146</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<span class="sp1">包图网广告设计交流群：<strong>214363552</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<span class="sp1">包图设计师福利发放群：<strong>334507831</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<span class="sp1 bt-sp">官方QQ群：<strong>514781631</strong></span>
+										<a href="" class="a1">申请加群</a>
+										<input type="button" value="更多QQ联盟群">
+									</div>
+								</div>
+							</li>
+							<li class="left_3"><a href="">微信礼包</a>
+								<div class="weixin">
+									<img src="images/er-code.png" width="150px" height="150px" style="margin: 10px 10px 0">
+									<p>扫码领299元大礼包</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="login-right">
+						<ul>
+							<li class="right_3"><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx29ca45d79042aa4c&redirect_uri=http%3A%2F%2F888pic.com%2Flogin%2Fcallback%3Ftype%3Dweixin&response_type=code&scope=snsapi_login">微信登陆</a></li>
+							<li class="right_2"><a href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=101334430&redirect_uri=http%3A%2F%2F888pic.com%2Flogin%2Fcallback%3Ftype%3Dqq&response_type=code&scope=get_user_info%2Cadd_share%2Cadd_pic_t" target="_blank">QQ登陆</a></li>
+							<li class="right_1"><a>注册</a></li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+			<div class="pop" style="animation-duration: 0.5s;">
+				<p class="close_pop"></p>
+				<p class="title">包图网</p>
+				<p class="p_line"><i></i>您将成为包图网第<span style="color: #FF9100">3,351,111</span>名注册用户<i></i></p>
+				<a href="" class="contact QQ_reg"><i></i>QQ一键注册</a>
+				<a href="" class="contact wx_reg"><i></i>微信一键注册</a>
+				<p class="agree"><input type="checkbox" checked="checked" disabled="disabled"> 同意 <a href="">《包图网网络服务使用协议》</a></p>
+				<p class="go_login">已有账号?<a href=""> 去登陆</a></p>
+			</div>
+			<div class="logo">
+				<div class="logo1200">
+					<div class="logo_img">
+						<a href="baotu.html"><img src="images/logo.png"></a>
+					</div>
+					<div class="logo_list">
+						<ul>
+							<li><a class="current" href="">首页</a></li>
+							<li><a href="advert_design.html">广告设计</a>
+								<div class="list_item">
+									<h3><a href="">广告设计(原创、可商用)</a></h3>
+									<a href="">海报</a><a href="">画册封面</a>
+									<a href="">展板</a><a href="">宣传单|折页</a>
+									<a href="">证书</a><a href="">名片|VIP卡</a>
+									<a href="">节目设计</a><a href="">简历</a>
+									<a href="">画册整套</a>
+								</div>
+							</li> 
+							<li><a href="advert_design.html">淘宝设计</a>
+								<div class="list_item">
+									<h3><a href="">淘宝设计(原创、可商用)</a></h3>
+									<a href="">综合模板</a><a href="">淘宝首页</a>
+									<a href="">节日活动</a><a href="">淘宝海报</a>
+									<a href="">主播|直通车</a><a href="">淘宝详情页</a>
+									<a href="">淘宝手机端模板</a>
+								</div>
+							</li>
+							<li><a href="advert_design.html">企业办公</a>
+								<div class="list_item company">
+									<h3><a href=""><span>PPT模板</span></a><a href=""><span>Excel模板</span></a></h3>
+									<h3><a href="">Word模板</a></h3>
+									<h3 class="h3"><a>PPT精选</a></h3>
+									<a href="">工作汇报</a><a href="">毕业答辩</a><a href="">计划总结</a>
+									<a href="">商业计划书</a><a href="">节日庆典</a><a href="">更多>></a>
+									<h3 class="h3"><a>Excel精选</a></h3>
+									<a href="">薪酬福利</a><a href="">考核绩效</a><a href="">财务报表</a>
+									<a href="">报价单</a><a href="">出入库</a><a href="">更多>></a>
+									<h3 class="h3"><a>Word精选</a></h3>
+									<a href="">简历</a><a href="">薪酬考核</a><a href="">买卖合同</a>
+									<a href="">工作计划</a><a href="">思想汇报</a><a href="">更多>></a>
+								</div>
+							</li>
+							<li><a href="advert_design.html">视频</a>
+								<div class="list_item">
+									<h3><a href="">视频设计(原创、可商用)</a></h3>
+									<a href="">AE模板</a><a href="">会声会影</a>
+									<a href="">Edius</a><a href="">实拍视频</a>
+								</div>
+							</li>
+							<li><a href="advert_design.html">背景</a>
+								<div class="list_item">
+									<h3><a href="">背景设计(原创、可商用)</a></h3>
+									<a href="">电商背景</a><a href="">广告设计背景</a>
+								</div>
+							</li>
+							<li><a href="advert_design.html">设计素材</a>
+								<div class="list_item">
+									<h3><a href="">设计素材(原创、可商用)</a></h3>
+									<a href="">节日</a><a href="">不规则图形</a>
+									<a href="">漂浮</a><a href="">效果元素</a>
+									<a href="">促销标签</a><a href="">艺术字</a>
+									<a href="">边框纹理</a><a href="">装饰图案</a>
+									<a href="">产品实物</a><a href="">手绘卡通</a>
+								</>
+							</li>
+							<li class="new"><a href="">企业VIP</a></li>
+							<li><a href="advert_design.html">个人VIP</a>
+								<div class="list_item VIP">
+									<a href=""><span>为什么要加入<strong>VIP</strong>?</span></a>
+									<a href=""><img src="images/tb-02.png"> <span>包图网拥有图片版权，<strong>放心商用</strong></span></a>
+									<a href=""><img src="images/tb-03.png"> <span>单价低至<strong>1分钱，</strong>全网最低</span></a>
+									<a href=""><img src="images/tb-04.png"> <span>全站设计模板<strong>无限下载</strong></span></a>
+									<a href=""><input type="button" value="立即加入VIP"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="search">
+				<div class="middle_search">
+					<input type="text" placeholder="搜 免费、可商用 设计作品"><input type="button" value="搜索">
+				</div>
+			</div>
+			<div class="slider">
+				<div class="bxslider" style="width: 880px;height: 475px">
+					<div id="slider">
+						<a href="advert_design.html"><img src="images/1.jpg" width="880px" height="475px"></a>
+						<a href="advert_design.html"><img src="images/2.jpg" width="880px" height="475px"></a>
+						<a href="advert_design.html"><img src="images/3.jpg" width="880px" height="475px"></a>
+						<a href="advert_design.html"><img src="images/4.jpg" width="880px" height="475px"></a>
+						<a href="advert_design.html"><img src="images/5.jpg" width="880px" height="475px"></a>
+					</div>
+				</div>
+				<div class="heiban">
+					<div class="text">
+						<h1>原创·可商用</h1>
+						<h1>全站免费下载</h1>
+						<p>每日更新 <span style="color: white;font-weight: bold;">1000</span> 张</p>
+					</div>
+				</div>
+			</div>
+			<div class="brand">
+				<ul>
+					<li><h3>全站精品</h3><p>全部人工审核筛选，确保精品</p></li>
+					<li><h3>免费下载</h3><p>随需下载，高速便捷</p></li>
+					<li><h3>全部商用</h3><p>100%正版保障，永无版权困扰</p></li>
+					<li><h3>正版版权</h3><p>标准RF授权许可，对作品版权担保</p></li>
+				</ul>
+			</div>
+			<div class="product">
+				<div class="left_nav">
+					<ul>
+						<li class="current sc_color"><a>导航</a></li>
+						<li><a>广告设计</a></li>
+						<li><a>PPT模板</a></li>
+						<li><a>淘宝设计</a></li>
+						<li><a>背景素材</a></li>
+						<li><a>视频设计</a></li>
+						<li class="back_top"><a>返回顶部</a></li>
+					</ul>
+				</div>
+				<div class="product_nav">
+					<a href="" class="current">精品推荐<span></span></a><a href="">今日上新<span></span></a>
+					<script type="text/javascript">
+						$(function(){
+							$('.product_nav a').eq(1).hover(function(){
+								$(this).addClass('current')
+							},function(){
+								$(this).removeClass('current')
+							})
+						})
+					</script>
+				</div>
+				<div class="product_advert" name="广告设计">
+					<h2 class="product_h">广告设计</h2>
+					<div class="advert_img">
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">端午节节日设计系列海报设计</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/1.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">清新创意端午节龙舟海报</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/2.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">端午节粽子促销海报</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/3.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">六一儿童节复古中国风儿时记忆公益宣传海报</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/4.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">六一儿童节 儿童 小朋友 小孩 爱心捐款</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/5.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">创意一带一路海报设计</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/6.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">简约中国风茶馆海报素材</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/7.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">艺术简约禅意文化创意海报</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/8.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">创意简介物联网海报设计</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/9.jpg">
+						</div>
+					</div>
+					<div class="product_more">
+						<a href="advert_design.html">查看更多</a>
+					</div>
+				</div>
+				<div class="product_ppt" name="PPT模板">
+					<h2 class="product_h">PPT模板</h2>
+					<div class="advert_img PPT" style="position: relative;">
+						<div class="box">
+							<div class="PPT_mask">
+								<a href=""><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p1.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p2.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p3.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p4.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p5.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p6.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p7.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p8.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+						<div class="box">
+							<div class="PPT_mask">
+								<a href="#"><span></span> 收藏</a>	
+								<a href="download_confirm.html"><span></span>VIP免费下载</a>
+							</div>
+							<img src="pic/p9.gif" style="width: 380px;height: auto;position: absolute;top: 0">
+						</div>
+					</div>
+					<div class="product_more">
+						<a href="advert_design.html">查看更多</a>
+					</div>
+				</div>
+				<div class="product_taobao" name="淘宝设计">
+					<h2 class="product_h">淘宝设计</h2>
+					<div class="advert_img">
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">端午粽子节龙舟节端午节温馨奶奶包粽子首页</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/t1.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">淘宝天猫六一儿童节母婴食品服饰首页</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/t2.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">淘宝天猫端午节活动化妆品首页设计PSD</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/t3.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">618大促活动首页</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/t4.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">淘宝鸡尾酒洋酒荔枝酒详情页描述PSD模板</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/t5.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">淘宝天猫618年中大促女装首页模板设计</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/t6.jpg">
+						</div>
+					</div>
+					<div class="product_more">
+						<a href="advert_design.html">查看更多</a>
+					</div>
+				</div>
+				<div class="product_background" name="背景素材">
+					<h2 class="product_h">背景素材</h2>
+					<div class="advert_img">
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">矢量端午传统节日古典古风背景</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/b1.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">矢量水墨传统边框古风古典背景</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/b2.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">矢量卡通手绘儿童节早教背景</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/b3.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">端午节字体手写字体</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/b4.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">六一儿童节海报标题艺术字字体素材</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/b5.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">六一儿童节海报标题艺术字字体素材</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/b6.jpg">
+						</div>
+					</div>
+					<div class="product_more">
+						<a href="advert_design.html">查看更多</a>
+					</div>
+				</div>
+				<div class="product_video" name="视频设计">
+					<h2 class="product_h">视频设计</h2>
+					<div class="advert_img">
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">中国风高端霸气端午节水墨片头AE模板</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/v1.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">中国风竹叶端午节龙舟粽子文化宣传AE模板</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/v2.jpg">
+						</div>
+						<div class="box">
+							<div class="mask">	
+								<a href="download.html">企业宣传通用开场视频片头模板宇宙宣传粒子</a>
+								<a href="download_confirm.html"><span></span>免费下载</a>
+								<a href="#"><span></span> 收藏</a>
+							</div>
+							<img src="pic/v3.jpg">
+						</div>
+					</div>
+					<div class="product_more">
+						<a href="advert_design.html">查看更多</a>
+					</div>
+				</div>
+				<div class="product_footer">
+					<div class="information">
+						<p class="info"><strong>TA</strong>们都在使用包图网</p>
+						<div class="info1"></div>
+						<div class="info2">
+							<span>宋英楠 &nbsp;腾讯高级运营经理</span>
+							<p>包图网的设计作品紧跟设计市场趋势，能够不断地提升设计师工作效率，给予设计师发散思维的参考，网站素材整体质量很棒，利于设计行业的不断向前发展。</p>
+						</div>
+						<div class="info3">
+							<span>李涛 &nvsp;千图网CEO</span>
+							<p>包图网设计作品真正做到为用户所想，为用户所用，无论从艺术设计感还是商业实用性的角度来说，包图网都做到了两者兼备。选择包图网，你没错！</p>
+						</div>
+						<div class="info4"></div>
+					</div>
+					<div class="partner">
+						<p>合作伙伴</p>
+						<div></div>
+					</div>
+					<div class="link">
+						<div>   <big style="color: #393939">友情链接</big>  摄图网  我图网  90设计  壁纸彼岸  图网素描  自学网  软件下载  红动网  PS  手机壁纸大全  淘宝店铺  装修模板  手抄报  视频素材  大图素材  唯美图片  桌面天下  唯美图片  桌面壁纸  第六下载  牛大拿  偶要下载  软件下载  中心文摘  好词好句  中国设计  网美女图片  中国素材网  神马软件站  素材中国  咕咕猪下载站  网站模板  下载优美图库  纳金网下载  王未来软件园  IE浏览器下载   电脑重装系统  唯一图库素材  天下80后  励志网  ppt模板论文网  ppt模板魔客吧  Ps字体下载  创意图片  系统圣地</div>
+						<div>申请友情链接请联系<small>QQ：2303940629</small></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>若发现您的权利被侵害，请联系客服QQ:800053584，我们将尽快处理</p>
+			<p><span>关于我们 设计图片 今日新图 热门专题 售后服务</span> 包图网 - Copyright © 2016包图网 沪ICP备10011451号-7 用时：0.0010 2.182 秒</p>
+		</div>
+	</div>
+</body>
+</html>
